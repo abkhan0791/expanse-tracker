@@ -1,0 +1,48 @@
+.expanse-container{
+  max-width: 350px;
+  min-height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: lightgray;
+  box-shadow: 0 0 10px grey;
+  padding: 10px 50px;
+}
+
+.text{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.history{
+  margin: 0;
+  padding: 0;
+}
+
+.history li{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px;
+  background-color: white;
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+
+.new-transaction input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.button{
+  background-color: lightgreen;
+  box-shadow: none;
+}
+
+
