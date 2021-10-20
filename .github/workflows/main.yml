@@ -40,4 +40,4 @@ jobs:
         run: npm install -g surge
         
       - name: Deploy Surge
-        run: npx surge ./build bt-2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: npx surge ./build exptracker_project1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
