@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import Expanse from './expanse.js';
+import { TransactionProvider } from './transactionC';
 
 function App() {
   return (
-    <div>
+    <TransactionProvider>
      <Expanse/>
-    </div>
+     </TransactionProvider>
   );
 }
 
