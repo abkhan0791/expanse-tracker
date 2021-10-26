@@ -50,8 +50,7 @@ function Expanse() {
                     <h3> EXPENSE <br /> ${getExpense()} </h3>
                 </div>
 
-                <h3 className='text_1'> HISTORY </h3>
-                <hr />
+                <h3 className='text_1'> HISTORY <hr /> </h3>
 
                 <ul className = 'history'>
                     {transactions.map((transObj, ind) => {
@@ -64,37 +63,30 @@ function Expanse() {
                     })}
                 </ul> 
 
-                <h3 className='text_1'> ADD NEW TRANSACTION </h3>
-                <hr />
+                <h3 className='text_1'> ADD NEW TRANSACTION  <hr /> </h3>
 
-                <form className='new-transaction' onSubmit={handleAddition}>
-                    <label className='text_1'>   
+                <form className='new_transaction' onSubmit={handleAddition}>
+                    <label>   
                         DESCREPTION
-                        <br />
                         <input type='text' 
                         value={newDesc}
-                        required placeholder='TEXT' 
+                        required placeholder='Descreption' 
                         onChange={(ev)=>setDesc(ev.target.value)} />
                     </label>
 
-                    <br />
-
-                    <label className='text_1'>
+                    <label>
                         Amount
-                        <br />
                         <input type='number' 
                         value={newAmount}
                         required placeholder='AMOUNT' 
                         onChange={(ev)=>setAmount(ev.target.value)} />
                     </label>
 
-                    <br />
-
-                    <input className='button' type='submit' value='ADD' />
+                    <input className='button' type='submit' value='ADD TRANSACTION' />
                 </form> 
             </div>
         </header>  
-  );
+    );
 }
 
 export default Expanse;
